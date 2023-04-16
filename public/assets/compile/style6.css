@@ -1,4 +1,3 @@
-/* 6 - assets/eef90b11/css/main.compile.css*/
 @font-face {
   font-family: "Open Sans";
   src: url("/fonts/OpenSansRegular/OpenSans-Regular-with-ruble.woff2")
@@ -3910,8 +3909,6 @@ body.b-picbox {
   left: 20px;
   width: 12px;
   height: 14px;
-  background: url(https://www.web-canape.ru/files/110/solution-tail.png) 50% 50%
-    no-repeat;
 }
 .b-detail-icon .detail-icon__popup--right::before {
   left: auto;
