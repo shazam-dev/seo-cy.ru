@@ -1,0 +1,44 @@
+/* 13 - assets/a672d6ec/css/categ_list.compile.css*/
+.b-category {
+  margin-right: -24px;
+}
+.b-category:after {
+  content: "";
+  display: block;
+  clear: both;
+  font-size: 0;
+}
+.b-category .category__item {
+  margin: 0 14px 20px 0;
+  width: 220px;
+  height: 260px;
+  float: left;
+  background: #f2f2f2 url("") left top no-repeat;
+  overflow: hidden;
+}
+.b-category .category__imgbox {
+  font-size: 0;
+}
+.b-category .category__title {
+  padding: 10px 20px 10px 20px;
+}
+.b-category .category__title a:link,
+.b-category .category__title a:active,
+.b-category .category__title a:visited {
+  font-family: Segoe UI;
+  font-size: 1em;
+  font-weight: normal;
+  font-style: normal;
+  text-decoration: none;
+  text-transform: normal;
+  color: #358db6;
+}
+.b-category .category__title a:hover {
+  font-family: Segoe UI;
+  font-size: 1em;
+  font-weight: normal;
+  font-style: normal;
+  text-decoration: underline;
+  text-transform: normal;
+  color: #358db6;
+}

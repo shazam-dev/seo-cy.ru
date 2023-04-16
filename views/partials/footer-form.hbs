@@ -1,0 +1,143 @@
+<div class="container">
+                <div id="form" class="b-form b-form_mainpage b-form--mainpage js-form" sktag="modules.forms">
+                    <div class="form__inner">
+                        <form  method="post" action="/response/" enctype="multipart/form-data" ajaxForm="1">
+                            {{!-- <div class="form__colleft">
+                                <div class="form__col-1-1 form__titletxt">
+                                    <h2>Оставьте заявку</h2>
+                                    <div class="form__text">Мы свяжемся с вами, ответим на интересующие вопросы и
+                                        подготовим коммерческое предложение</div>
+                                </div>
+                                <div class="form__radiolist"> <!--label class="form__label">Тип заявки</label-->
+                                    <div class="form__col-1-1 form__col-radio">
+                                        <div class="form__inputwrap">
+                                            <div class="form__label_wrap"> <input class="form__radio" type="radio"
+                                                    name="works_type"
+                                                    checked value="dev" /> <label class="form__label"
+                                                    for="works_type0_3441942a6431b5564be4c7b85f4851af">Разработка
+                                                    сайта</label> </div>
+                                        </div>
+                                    </div>
+                                    <div class="form__col-1-1 form__col-radio">
+                                        <div class="form__inputwrap">
+                                            <div class="form__label_wrap"> <input class="form__radio" type="radio"
+                                                    name="works_type" 
+                                                    value="adv" /> <label class="form__label"
+                                                    for="works_type1_3441942a6431b5564be4c7b85f4851af">Продвижение и
+                                                    реклама</label> </div>
+                                        </div>
+                                    </div>
+                                    <div class="form__col-1-1 form__col-radio">
+                                        <div class="form__inputwrap">
+                                            <div class="form__label_wrap"> <input class="form__radio" type="radio"
+                                                    name="works_type" 
+                                                    value="site_support" /> <label class="form__label"
+                                                    for="works_type2_3441942a6431b5564be4c7b85f4851af">Поддержка
+                                                    сайта</label> </div>
+                                        </div>
+                                    </div>
+                                    <div class="form__col-1-1 form__col-radio">
+                                        <div class="form__inputwrap">
+                                            <div class="form__label_wrap"> <input class="form__radio" type="radio"
+                                                    name="works_type" 
+                                                    value="other" /> <label class="form__label"
+                                                    for="works_type3_3441942a6431b5564be4c7b85f4851af">Другое</label>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <p class="form__info"></p>
+                                </div>
+                             
+                            </div> --}}
+
+
+
+                            <div class="b-form-range js-form-range">
+                                <div class="form-range__title">Оставьте заявку</div>
+                                <div class="form-range__text">Укажите примерную сумму, которую планируете на реализацию
+                                    проекта</div>
+                                <div class="form-range__price-input">
+                                    <div class="field"> <span>от</span> <input type="number" class="input-min"
+                                            value="5000"> <span>руб.</span> </div>
+                                    <div class="field"> <span>до</span> <input type="number" class="input-max"
+                                            value="100000"> <span>руб.</span> </div>
+                                </div>
+                                {{!-- <div class="form-range__range-slider">
+                                    <div class="form-range__progress"></div>
+                                </div> --}}
+                                {{!-- <div class="form-range__range-input"> <input type="range" class="range-min" step="1"
+                                        min="5000" max="1000000"> <input type="range" class="range-max" step="1"
+                                        min="5000" max="1000000"> </div> --}}
+                            </div>
+
+
+
+                            <div class="form__content">
+                                <div class="form__col-1-3 form__label-none form__col-nopad"> <label class="form__label"
+                                        for="fio_3441942a6431b5564be4c7b85f4851af">ФИО <ins
+                                            class="form__mark">*</ins></label>
+                                    <div class="form__inputwrap"> <input type="text" name="fio"
+                                             value="" placeholder="ФИО" />
+                                    </div>
+                                    <p class="form__info"></p>
+                                </div>
+                                <div class="form__col-1-3 form__label-none form__col-nopad"> <label class="form__label"
+                                        for="phone_3441942a6431b5564be4c7b85f4851af">Телефон <ins
+                                            class="form__mark">*</ins></label>
+                                    <div class="form__inputwrap"> <input type="tel" name="phone"
+                                             value="" placeholder="Телефон"
+                                            mask="phone" /> </div>
+                                    <p class="form__info"></p>
+                                </div>
+                                <div class="form__col-1-3 form__label-none form__col-nopad"> <label class="form__label"
+                                        for="email_3441942a6431b5564be4c7b85f4851af">E-mail <ins
+                                            class="form__mark">*</ins></label>
+                                    <div class="form__inputwrap"> <input type="email" name="email"
+                                             value="" placeholder="E-mail" />
+                                    </div>
+                                    <p class="form__info"></p>
+                                </div>
+                                <div class="form__col-1 form__label-none form__col-nopad"> <label class="form__label"
+                                        for="comment_3441942a6431b5564be4c7b85f4851af">Укажите сферу бизнеса, регион
+                                        работы, адрес действующего сайта и витрины</label>
+                                    <div class="form__inputwrap"> <textarea name="comment"
+                                            
+                                            placeholder="Укажите сферу бизнеса, регион работы, адрес действующего сайта и витрины"></textarea>
+                                    </div>
+                                    <p class="form__info"></p>
+                                </div> <input type="hidden" name="zagolovok" id="zagolovok"
+                                    value="Заявка с сайта с web-canape.ru" /> <input type="hidden" name="_visitor_data"
+                                    id="_visitor_data" value="" />
+                                <div class="form__col-1 form__label-none form__col-nopad"> <label class="form__label"
+                                        for="price_range_3441942a6431b5564be4c7b85f4851af">Ценовой диапазон</label>
+                                    <div class="form__inputwrap"> <input type="text" name="price_range"
+                                            i value="5000₽-100000₽"
+                                            placeholder="Ценовой диапазон"
+                                            style="opacity:0;pointer-events:none;position:absolute;" /> </div>
+                                    <p class="form__info"></p>
+                                </div>
+                                <div class="form__line">
+                                    <div class="form__col-1 form__col-btn"> <button type="submit"
+                                            class="b-btnbox js-submit">Отправить</button> </div> <!-- -->
+                                   
+                                    <input type="checkbox"  name="agreed"
+                                        value="1" checked style="display: none;" />
+                                    <div class="form__label" for="check_ok_3441942a6431b5564be4c7b85f4851af">Нажимая
+                                        кнопку «Отправить», вы даете согласие на обработку персональных данных согласно
+                                        <a href="/about/politika-konfidencialnosti/" target="_blank">Политике
+                                            конфиденциальности</a> </div>
+                                    
+                                </div> <!-- -->
+                            </div> <input type="hidden" name="canape_promo_code" id="canape_promo_code" value="promo" />
+                            
+                            <div class="g-clear"></div> <input class="form__cptch_country" type="text"
+                                name="cptch_country" /> <input class="form__mail_c" type="text" name="mail_c" /> <input
+                                type="hidden" name="cmd" value='send' /> <input type="hidden" name="form_id"
+                                id="form_id" value="52" /> <input type="hidden" name="label" value="out" /> <input
+                                type="hidden" name="section" value="78" /> <input type="hidden" name="ajaxShow"
+                                value="" /> <input type="hidden" class="_rules"/>
+                            <input type="hidden" name="showRangeField" value='1' /> <!-- </div> -->
+                        </form>
+                    </div>
+                </div>
+</div>

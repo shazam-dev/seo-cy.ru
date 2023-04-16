@@ -1,0 +1,15 @@
+/* 12 - assets/c49cb574/css/mobile_portfolio.compile.css*/
+.b-portfolioblock--carousel .owl-nav {
+  display: flex;
+  justify-content: center;
+  margin-top: 24px;
+}
+.b-portfolioblock--carousel .owl-prev,
+.b-portfolioblock--carousel .owl-next {
+  margin: 0 4px;
+  transition: opacity 0.2s ease;
+}
+.b-portfolioblock--carousel .owl-prev:hover,
+.b-portfolioblock--carousel .owl-next:hover {
+  opacity: 0.7;
+}

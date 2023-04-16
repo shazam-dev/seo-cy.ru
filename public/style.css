@@ -1,0 +1,14 @@
+.disabled { 
+    pointer-events: none; 
+    cursor: default; 
+    } 
+
+.whatsapp-call {
+    position: fixed;
+    bottom: 10px;
+    right: 10px;
+    z-index: 999;
+}
+.whatsapp-call img {
+    height: 120px;
+}
