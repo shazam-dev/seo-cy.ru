@@ -3,7 +3,13 @@
 
 
 
-
+$(window).scroll(function () {
+  if ($(this).scrollTop() > 190) {
+    $(".js-fixed-menu2").addClass("b-sevice__fixed2");
+  } else {
+    $(".js-fixed-menu2").removeClass("b-sevice__fixed2");
+  }
+});
 
 
 // $(function () {
