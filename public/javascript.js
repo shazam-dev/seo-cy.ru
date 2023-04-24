@@ -362,64 +362,69 @@ $(window).scroll(function () {
       }
     );
   });
-  $(function () {
-    let popupLink = null;
-    popupLink = $("[data-ytvideo]");
-    if (popupLink.attr("data-ytvideo")) {
-      tag = document.createElement("script");
-      tag.src = "https://www.youtube.com/iframe_api";
-      let firstScriptTag = document.getElementsByTagName("script")[0];
-      firstScriptTag.parentNode.insertBefore(tag, firstScriptTag);
-      let htmlPopupYTVideo = $(
-        `<div class="b-overlay"></div><div class="b-popup-yt"><div class="popup-yt__inner"><div class="popup-yt__box"><div class="popup-video-yt__close"><svg height="100%"viewBox="0 0 16 16"width="100%"fill="currentColor"><path d="M13 4L12 3 8 7 4 3 3 4 7 8 3 12 4 13 8 9 12 13 13 12 9 8z"></path></svg></div><div class="popup-video-yt__container"><div class="popup-video-yt__frame"></div></div></div></div></div>`
-      );
-      let player;
-      let flag = false;
-      popupLink?.each(function (idx, el) {
-        if ($(el).attr("data-ytvideo").length !== 0) {
-          $(this).on("click", function (e) {
-            e.preventDefault();
-            $("body").css("overflow", "hidden");
-            $("body").append(htmlPopupYTVideo);
-            let iFrame = $(".popup-video-yt__frame");
-            let videoId = $(this).attr("data-ytvideo");
-            let playerId = `${idx}-` + $(this).attr("data-ytplayer");
-            let close = $(".popup-video-yt__close");
-            playerId ? iFrame.attr("id", playerId) : "";
-            flag = true;
-            let countInterval = 0;
-            let plInterval = setInterval(function () {
-              countInterval += 1;
-              if (countInterval > 10 || flag === false) {
-                clearInterval(plInterval);
-                closePopup();
-              }
-              if ($("#www-widgetapi-script").length) {
-                player = new YT.Player(playerId, {
-                  playerVars: { playsinline: 1, autoplay: 0 },
-                  videoId: videoId,
-                  events: { onReady: onPlayerReady },
-                });
-                clearInterval(plInterval);
-              }
-            }, 1000);
-            close.on("click", closePopup);
-          });
-        }
-      });
-      function closePopup() {
-        $("body").css("overflow", "auto");
-        htmlPopupYTVideo.remove();
-        flag = false;
-        if (player !== undefined) {
-          player.destroy();
-        }
-      }
-      function onPlayerReady(event) {
-        let video = event.target.i;
-      }
-    }
-  });
+
+
+
+
+
+  // $(function () {
+  //   let popupLink = null;
+  //   popupLink = $("[data-ytvideo]");
+  //   if (popupLink.attr("data-ytvideo")) {
+  //     tag = document.createElement("script");
+  //     tag.src = "https://www.youtube.com/iframe_api";
+  //     let firstScriptTag = document.getElementsByTagName("script")[0];
+  //     firstScriptTag.parentNode.insertBefore(tag, firstScriptTag);
+  //     let htmlPopupYTVideo = $(
+  //       `<div class="b-overlay"></div><div class="b-popup-yt"><div class="popup-yt__inner"><div class="popup-yt__box"><div class="popup-video-yt__close"><svg height="100%"viewBox="0 0 16 16"width="100%"fill="currentColor"><path d="M13 4L12 3 8 7 4 3 3 4 7 8 3 12 4 13 8 9 12 13 13 12 9 8z"></path></svg></div><div class="popup-video-yt__container"><div class="popup-video-yt__frame"></div></div></div></div></div>`
+  //     );
+  //     let player;
+  //     let flag = false;
+  //     popupLink?.each(function (idx, el) {
+  //       if ($(el).attr("data-ytvideo").length !== 0) {
+  //         $(this).on("click", function (e) {
+  //           e.preventDefault();
+  //           $("body").css("overflow", "hidden");
+  //           $("body").append(htmlPopupYTVideo);
+  //           let iFrame = $(".popup-video-yt__frame");
+  //           let videoId = $(this).attr("data-ytvideo");
+  //           let playerId = `${idx}-` + $(this).attr("data-ytplayer");
+  //           let close = $(".popup-video-yt__close");
+  //           playerId ? iFrame.attr("id", playerId) : "";
+  //           flag = true;
+  //           let countInterval = 0;
+  //           let plInterval = setInterval(function () {
+  //             countInterval += 1;
+  //             if (countInterval > 10 || flag === false) {
+  //               clearInterval(plInterval);
+  //               closePopup();
+  //             }
+  //             if ($("#www-widgetapi-script").length) {
+  //               player = new YT.Player(playerId, {
+  //                 playerVars: { playsinline: 1, autoplay: 0 },
+  //                 videoId: videoId,
+  //                 events: { onReady: onPlayerReady },
+  //               });
+  //               clearInterval(plInterval);
+  //             }
+  //           }, 1000);
+  //           close.on("click", closePopup);
+  //         });
+  //       }
+  //     });
+  //     function closePopup() {
+  //       $("body").css("overflow", "auto");
+  //       htmlPopupYTVideo.remove();
+  //       flag = false;
+  //       if (player !== undefined) {
+  //         player.destroy();
+  //       }
+  //     }
+  //     function onPlayerReady(event) {
+  //       let video = event.target.i;
+  //     }
+  //   }
+  // });
   
 
   function getFaqAccordion() {
