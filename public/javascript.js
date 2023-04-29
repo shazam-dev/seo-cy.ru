@@ -1,7 +1,41 @@
 
 
+// Обработка выбора города в хедере сайта
+
+let arrSity = [
+"/", "/volgograd/"
+];
+let select = document.querySelector('#cars');
+
+if (localStorage.getItem("sityNow")) {
+//   localStorage.setItem("sityNow", );
+// localStorage.getItem("sityNow");
+  // alert(22)
+select.value = localStorage.getItem("sityNow");
+} else {
+  // localStorage.sity = 1;
+}
+
+select.addEventListener('focus',function(){
+
+  select.value = null;
+  
+  });
+
+select.addEventListener('change',function(){
+
+window.location.href = arrSity[select.value] ;
+localStorage.setItem("sityNow", select.value);
+
+});
 
 
+
+
+
+
+
+// ФУНКЦИИ САЙТА ДО МЕНЯ
 
 $(window).scroll(function () {
   if ($(this).scrollTop() > 190) {

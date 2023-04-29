@@ -12,3 +12,23 @@
 .whatsapp-call img {
     height: 120px;
 }
+#cars{
+    /* position: relative; */
+    text-align: center;
+    line-height: 25px;
+    border-radius: 5px;
+    padding: 0 10px;
+    font-size: 16px;
+    margin-right: 10px;
+}
+/* #cars ::after{
+    content: "";
+    position: absolute;
+    border-top: 10px solid black;
+    top: 0px;
+    left: 0px;
+    background-color: black;
+    width: 20px;
+    height: 10px;
+
+} */

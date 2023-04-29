@@ -1,7 +1,7 @@
 <div class="container">
                 <div class="b-sandwich js-sidebar-show show-on-tablet show-on-mobile"> <img
                         src="/files/110/sandwich.png" alt="" /> </div>
-                <div class="b-pilot" sktag="page.head" sklayout="head">
+                <div class="b-pilot">
                     <div class="b-logo " sktag="page.head.logo"><a href="/"><img class="logo__image"
                                 src="/files/1/logo.png"></a> </div>
                     <div class="pilot__1 hide-on-tablet hide-on-mobile">
@@ -60,15 +60,19 @@
                                                                 сайты</a></div>
                                                         <div class="sub-menu__item"><a
                                                                 href="/razrabotka-sajta/individualnye-resheniya/landing-page/">Лендинг (Landing)
-                                                                </a></div>
+                                                            </a></div>
+                                                        <div class="sub-menu__item"><a
+                                                            href="/razrabotka-sajta/individualnye-resheniya/sajt-vizitka/">Сайты-визитки
+                                                        </a></div>
+                                                        <div class="sub-menu__item"><a
+                                                            href="/razrabotka-sajta/individualnye-resheniya/sajt-vizitka/">Сайты-каталоги
+                                                        </a></div>
                                                         <div class="sub-menu__item"><a
                                                                 href="/razrabotka-sajta/individualnye-resheniya/internet-magazin/">Интернет-магазины
                                                             </a></div>
-                                                        <div class="sub-menu__item"><a
-                                                                href="/razrabotka-sajta/individualnye-resheniya/sajt-vizitka/">Сайты-визитки
-                                                            </a></div>
+                                                        
                                                     </div>
-                                                    <div class="sub-menu__col">
+                                                    {{!-- <div class="sub-menu__col">
                                                         <div class="sub-menu__top">
                                                             <div class="sub-menu__title">Системы управления</div>
                                                             <div class="sub-menu__item"><a
@@ -84,7 +88,7 @@
                                                                     href="/razrabotka-sajta/predproektnaya-analitika/">Проектирование
                                                                     сайта</a></div>
                                                         </div>
-                                                    </div>
+                                                    </div> --}}
                                                     {{!-- <div class="sub-menu__col">
                                                         <div class="sub-menu__title"><a href="/portfolio/">Портфолио</a>
                                                         </div>
@@ -173,7 +177,7 @@
                                                                 href="/prodvizhenie-sajtov/seo/mebelnye-kompanii/">Мебель
                                                             </a></div>
                                                     </div> --}}
-                                                    <div class="sub-menu__col">
+                                                    {{!-- <div class="sub-menu__col">
                                                         <div class="sub-menu__title">Дополнительно</div>
                                                         <div class="sub-menu__item"><a
                                                                 href="/prodvizhenie-sajtov/razrabotka-digital-strategii/">Digital-стратегия
@@ -187,7 +191,7 @@
                                                         <div class="sub-menu__item"><a
                                                                 href="/prodvizhenie-sajtov/seo/bazovaya-optimizaciya/">Базовая
                                                                 SEO-оптимизация </a></div>
-                                                    </div>
+                                                    </div> --}}
                                                 </div>
                                                 <div class="sub-menu__right hide-on-tablet hide-on-mobile">
                                                     <div class="sub-menu__banner"><a class="sub-menu__banner-link"
@@ -227,7 +231,7 @@
                                                         <div class="sub-menu__item"><a
                                                                 href="/reklama/reklama-v-telegram/">Телеграм </a></div>
                                                     </div>
-                                                    <div class="sub-menu__col">
+                                                    {{!-- <div class="sub-menu__col">
                                                         <div class="sub-menu__title">Типы рекламы</div>
                                                         <div class="sub-menu__item"><a
                                                                 href="/reklama/kontekstnaya-reklama/">Контекстная </a>
@@ -239,7 +243,7 @@
                                                                 href="/marketplejsy/">Маркетплейсы </a></div>
                                                         <div class="sub-menu__item"><a
                                                                 href="/reklama/remarketing/">Ретаргетинг </a></div>
-                                                    </div>
+                                                    </div> --}}
                                                     {{!-- <div class="sub-menu__col">
                                                         <div class="sub-menu__title">Дополнительно</div>
                                                         <div class="sub-menu__item"><a href="/cases/">Кейсы по рекламе
@@ -334,7 +338,7 @@
                                                                 href="/sluzhba-podderzhki/support/ochistka-sajta-na-bitrikse-ot-virusov/">Лечение
                                                                 вирусов</a></div>
                                                     </div> --}}
-                                                    <div class="sub-menu__col">
+                                                    {{!-- <div class="sub-menu__col">
                                                         <div class="sub-menu__title"><a
                                                                 href="/sluzhba-podderzhki/hosting-webcanape/">Хостинг</a>
                                                         </div>
@@ -347,7 +351,7 @@
                                                         <div class="sub-menu__item"><a
                                                                 href="/sluzhba-podderzhki/support/smena-i-prodlenie-hostinga-sajta/">Смена
                                                                 хостинга</a></div>
-                                                    </div>
+                                                    </div> --}}
                                                 </div>
                                                 <div class="sub-menu__right hide-on-tablet hide-on-mobile">
                                                     <div class="sub-menu__banner"><a class="sub-menu__banner-link"
@@ -368,14 +372,23 @@
                     <div class="b-header" sklayout="head">
                         <div class="b-sevice" sktag="menu.top">
                             <ul class="level-1" sktag="menu.top.level1">
+                                <li class="item-1">
+                                
+
+                                            <select name="sity" id="cars">
+                                                <option class="sity-now" value="0">Москва</option>
+                                                <option class="sity-now" value="1">Волгоград</option>
+                                                </select>
+                                            </li>
                                 <li class="item-1"><span><a href="/Прайс по разработке сайтов, интернет продвижению и.pptx" download>
+
                                             Прайс (скачать)</a></span> </li>
                                 <li class="item-1"><span><a href="/portfolio/">
                                             Портфолио</a></span> </li>
                                 <li class="item-1"><span><a href="/thanks/">
                                             Отзывы</a></span> </li>
-                                <li class="item-1"><span><a href="/about/">О
-                                            нас</a></span> </li>
+                                {{!-- <li class="item-1"><span><a href="/about/">О
+                                            нас</a></span> </li> --}}
                                 <li class="item-1"><span><a href="/contacts/">
                                             Контакты</a></span> </li>
                             </ul>

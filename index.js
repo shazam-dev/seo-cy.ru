@@ -1,9 +1,5 @@
-
-
-// Импорт относительного пути 
-// import __dirname from './dirname';
-
 import router from './routers/router.js';
+// import routerVolgograd from './routers/volgograd/router.js';
 import { fileURLToPath } from 'url';
 import path from 'path';
 
@@ -22,37 +18,26 @@ let app = express();
 app.use(express.static(__dirname + '/public/'))
 
 // ROUTING:
-app.use('/razrabotka-sajta/', router);
+app.use('/', router);
+
+// app.use('/volgograd/', routerVolgograd);
 
 
-
-
-
-
-
-
-
-
-
+// app.get('/', function(req, res) {
+// 	res.render('main');
+// });
 
 
 app.engine('hbs', handlebars.engine);
 app.set('view engine', 'hbs');
 
 
-app.get('/', function(req, res) {
-	res.render('main');
-});
-
-
-
 
 
 // 404 
 app.use(function(req, res) {
-	res.status(404).render('404', { layout: '404'});
+	res.status(404).render('pages/404', { layout: '404'});
 });
-
 
 
 //  PORT
