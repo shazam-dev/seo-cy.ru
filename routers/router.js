@@ -15,6 +15,13 @@ links.forEach(function(link) {
       res.render(link.page, { title: link.title,  layout: link.layout, h1: link.h1, description: link.description});
     });
   });
+  
+  // links.forEach(function(link) {
+  //   router.get('/volgograd/' + link.url, function(req, res, next) {
+  //   //   console.log("trying to open " + link.url);
+  //     res.render(link.page, { title: link.title,  layout: link.layout, h1: link.h1, description: link.description});
+  //   });
+  // });
 
   // linksVolgograd.forEach(function(link1) {
   //   router.get(link1.url, function(req, res, next) {

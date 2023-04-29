@@ -2,11 +2,11 @@
                 <div class="b-sandwich js-sidebar-show show-on-tablet show-on-mobile"> <img
                         src="/files/110/sandwich.png" alt="" /> </div>
                 <div class="b-pilot">
-                    <div class="b-logo " sktag="page.head.logo"><a href="/"><img class="logo__image"
+                    <div class="b-logo " ><a href="/"><img class="logo__image"
                                 src="/files/1/logo.png"></a> </div>
                     <div class="pilot__1 hide-on-tablet hide-on-mobile">
-                        <p class="pilot__btn hide-on-mobile"><a ajaxform="1" class="header_button callback"
-                                formname="service_order_popup" href="#" js_max_width="1150">Заказать услуги</a></p>
+                        <p class="pilot__btn hide-on-mobile"><a class="header_button callback"
+                                 href="#">Заказать услуги</a></p>
                         <p class="pilot__btn hide-on-desktop hide-on-tablet"><a class="header_button js-sidebar-link"
                                 href="/contacts/#form_e94025029faf1bf94c3d7bb863c083b2">Заказать услуги</a></p>
                     </div>
@@ -23,11 +23,12 @@
                     </div>
                     <div class="pilot__3 hide-on-tablet hide-on-mobile">
                         <div class="b-head-contacts">
-                            <div class="head-contacts__phone"><a href="tel:88002009460">8-800-200-94-60</a></div>
-                            <noindex>
+                            <div class="head-contacts__phone" style="margin-top: 10px;"><a href="tel:880020000000">8-800-200-0000</a></div>
+                            {{!-- Убрать style чтобы выровнить почту --}}
+                            {{!-- <noindex>
                                 <div class="head-contacts__email"><a
                                         href="mailto:rop@mail.com">rop@mail.com</a></div>
-                            </noindex>
+                            </noindex> --}}
                         </div>
                     </div>
                     <div class="pilot__4 hide-on-tablet hide-on-mobile">
@@ -42,12 +43,11 @@
             </div>
             <div class="js-fixed-menu2">
                 <div class="container container-nopad sevice__fixed2__wrapper hide-on-tablet hide-on-mobile">
-                    <div class="b-menu context" sktag="menu.left">
+                    <div class="b-menu context" >
                         <div class="menu__inner">
-                            <ul class="level-1" sktag="menu.left.level1">
-                                <li class="item-1"> <a href="/razrabotka-sajta/"> <em
-                                            style="background-image: url(/files/293/icon-menu-10.png);"></em>
-                                        <ins></ins> Сайты </a>
+                            <ul class="level-1" >
+                                <li class="item-1"> <a href="#" class="disabled"  rel="nofollow"> 
+                                         Сайты </a>
                                     <div class="item-1-sub js-submenu">
                                         <div class="b-sub-menu">
                                             <div class="sub-menu__wrapper">
@@ -56,7 +56,7 @@
                                                         <div class="sub-menu__title"><a
                                                                 href="/razrabotka-sajta/">Разработка сайтов </a></div>
                                                         <div class="sub-menu__item"><a
-                                                                href="/razrabotka-sajta/gotovye-resheniya/">Готовые
+                                                                href="/razrabotka-saitov/gotovie-saiti/">Готовые
                                                                 сайты</a></div>
                                                         <div class="sub-menu__item"><a
                                                                 href="/razrabotka-sajta/individualnye-resheniya/landing-page/">Лендинг (Landing)
@@ -126,30 +126,29 @@
                                         </div>
                                     </div>
                                 </li>
-                                <li class="item-1"> <a href="/prodvizhenie-sajtov/"> <em
-                                            style="background-image: url(/files/366/icon-menu-20.png);"></em>
-                                        <ins></ins> Продвижение </a>
+                                <li class="item-1"> <a  href="#" class="disabled" rel="nofollow"> 
+                                       Продвижение </a>
                                     <div class="item-1-sub js-submenu">
                                         <div class="b-sub-menu">
                                             <div class="sub-menu__wrapper">
                                                 <div class="sub-menu__left">
                                                     <div class="sub-menu__col">
                                                         <div class="sub-menu__title"><a
-                                                                href="/prodvizhenie-sajtov/seo/">SEO-продвижение</a>
+                                                                href="#">SEO-продвижение</a>
                                                         </div>
                                                         <div class="sub-menu__item"><a
-                                                            href="/prodvizhenie-sajtov/seo/pod-yandeks/">В Яндексе
+                                                            href="#">SEO в Яндексе
                                                         </a></div>
                                                         <div class="sub-menu__item"><a
-                                                            href="/prodvizhenie-sajtov/seo/pod-yandeks/">В Google
+                                                            href="#">SEO в Google
                                                         </a></div>
                                                         <div class="sub-menu__item"><a href="/marketplejsy/">В
                                                                 маркетплейсах</a></div>
                                                         <div class="sub-menu__item"><a
-                                                                href="/prodvizhenie-sajtov/seo/moskva/">По Москве </a>
+                                                                href="/prodvizhenie-sajtov/seo/moskva/">В соцсетях </a>
                                                         </div>
                                                         <div class="sub-menu__item"><a
-                                                                href="/prodvizhenie-sajtov/seo/regiony/">По регионам
+                                                                href="/prodvizhenie-sajtov/seo/regiony/">SEO по Москве
                                                             </a></div>
                                                         
                                                     </div>
@@ -209,8 +208,7 @@
                                         </div>
                                     </div>
                                 </li>
-                                <li class="item-1"> <a href="/reklama/"> <em
-                                            style="background-image: url(/files/491/ads-icon.png);"></em> <ins></ins>
+                                <li class="item-1"> <a href="#" class="disabled" rel="nofollow"> 
                                         Реклама </a>
                                     <div class="item-1-sub js-submenu">
                                         <div class="b-sub-menu">
@@ -225,11 +223,13 @@
                                                                 href="/razvitie-sajta/price-adv/uslugi-reklamy-na-tarifah/vedenie-yandeks-market/">Яндекс
                                                                 Маркет </a></div>
                                                         <div class="sub-menu__item"><a
+                                                        href="/reklama/reklama-v-telegram/">Маркетплейсы </a>
+                                                        </div>
+                                                        <div class="sub-menu__item"><a
                                                                 href="/reklama/reklama-vk/">Вконтакте </a></div>
                                                         <div class="sub-menu__item"><a
                                                                 href="/reklama/reklama-na-avito/">Авито </a></div>
-                                                        <div class="sub-menu__item"><a
-                                                                href="/reklama/reklama-v-telegram/">Телеграм </a></div>
+                                                        
                                                     </div>
                                                     {{!-- <div class="sub-menu__col">
                                                         <div class="sub-menu__title">Типы рекламы</div>
@@ -284,16 +284,14 @@
                                         </div>
                                     </div>
                                 </li>
-                                <li class="item-1"> <a href="/sluzhba-podderzhki/support/"> <em
-                                            style="background-image: url(/files/110/icon-mini-support.png);"></em>
-                                        <ins></ins> Поддержка </a>
+                                <li class="item-1"> <a href="#" class="disabled"  rel="nofollow"> 
+                                        Поддержка </a>
                                     <div class="item-1-sub js-submenu">
                                         <div class="b-sub-menu">
                                             <div class="sub-menu__wrapper">
                                                 <div class="sub-menu__left">
                                                     <div class="sub-menu__col">
-                                                        <div class="sub-menu__title"><a
-                                                                href="/sluzhba-podderzhki/support/">Техподдержка</a>
+                                                        <div class="sub-menu__title">Техподдержка
                                                         </div>
                                                         <div class="sub-menu__item"><a
                                                                 href="/sluzhba-podderzhki/reglament-rabot/">Регламент
@@ -355,7 +353,7 @@
                                                 </div>
                                                 <div class="sub-menu__right hide-on-tablet hide-on-mobile">
                                                     <div class="sub-menu__banner"><a class="sub-menu__banner-link"
-                                                             a class="disabled"  rel="nofollow" >&nbsp;</a>
+                                                              class="disabled"  rel="nofollow" >&nbsp;</a>
                                                         <div class="sub-menu__banner-inner">
                                                             <div class="sub-menu__banner-pic"><img alt=""
                                                                     src="/files/110/bitrix.jpg" /></div>
@@ -370,8 +368,8 @@
                         </div>
                     </div>
                     <div class="b-header" sklayout="head">
-                        <div class="b-sevice" sktag="menu.top">
-                            <ul class="level-1" sktag="menu.top.level1">
+                        <div class="b-sevice">
+                            <ul class="level-1" >
                                 <li class="item-1">
                                 
 
@@ -399,5 +397,5 @@
                 </div>
             </div>
             <div class="container container-nopad">
-                <div class="b-picture2" sklayout="head" sktag="page.head"></div>
+                <div class="b-picture2" sklayout="head" ></div>
             </div>

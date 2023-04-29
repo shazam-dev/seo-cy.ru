@@ -1,7 +1,7 @@
 let links = [
     {
         url: '/volgograd/', 
-        page: 'pages/page1', 
+        page: 'pages/min1', 
         layout: 'page1', 
         h1: 'Разработка сайта-визитки «под ключ»', 
         title: 'здевь тайтл', 

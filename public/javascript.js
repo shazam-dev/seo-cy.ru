@@ -8,12 +8,10 @@ let arrSity = [
 let select = document.querySelector('#cars');
 
 if (localStorage.getItem("sityNow")) {
-//   localStorage.setItem("sityNow", );
-// localStorage.getItem("sityNow");
-  // alert(22)
+
 select.value = localStorage.getItem("sityNow");
 } else {
-  // localStorage.sity = 1;
+
 }
 
 select.addEventListener('focus',function(){
@@ -24,7 +22,7 @@ select.addEventListener('focus',function(){
 
 select.addEventListener('change',function(){
 
-window.location.href = arrSity[select.value] ;
+// window.location.href = arrSity[select.value] ;
 localStorage.setItem("sityNow", select.value);
 
 });
