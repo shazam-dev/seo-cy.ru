@@ -12,7 +12,7 @@ import linksVolgograd from './linksVolgograd.js';
 links.forEach(function(link) {
     router.get(link.url, function(req, res, next) {
     //   console.log("trying to open " + link.url);
-      res.render(link.page, { title: link.title,  layout: link.layout, h1: link.h1, description: link.description});
+      res.render(link.page, { h2: link.h2, textMain: link.textMain, price: link.price, textUp: link.textUp, title: link.title,  layout: link.layout, h1: link.h1, description: link.description});
     });
   });
   
