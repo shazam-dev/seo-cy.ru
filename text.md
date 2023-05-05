@@ -14,6 +14,11 @@ IP-адрес:	62.217.181.74
 x&qkw4bH%VG*
 x&qkw4bH%VG*
 
+
+cd ../home/apps/seo/
+
+
+
 https://github.com/jacklee137/web.git
 
 sudo apt install nginx
