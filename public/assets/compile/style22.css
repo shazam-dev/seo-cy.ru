@@ -8878,7 +8878,7 @@ mo.b-scheme-work:after {
 .b-types-of-site .types-of-site__item {
   padding: 80px 10px 40px;
   width: 20%;
-  min-height: 510px;
+  /* min-height: 510px; */
   box-sizing: border-box;
   text-align: center;
   border: 1px solid #dcdcdc;

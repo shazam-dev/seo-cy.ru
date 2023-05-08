@@ -30,3 +30,13 @@ sudo apt install nginx
  sudo nano /etc/nginx/sites-available/default
 
  https://www.youtube.com/watch?v=Qu-oyzWIpjI&ab_channel=AreaWeb
+
+
+
+ GPT чфт
+ Логин: brry1gmijd4s@hotmailer.org
+ Пароль: biHihmRuJCJ9k2
+ Login: brry1gmijd4s@hotmailer.org
+ Password: biHihmRuJCJ9k2
+ Если возникла проблема со входом, обязательно обратись к нам мы быстро поможем!
+ If you have a problem with logging in, be sure to contact us, we will help you quickly

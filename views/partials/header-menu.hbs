@@ -1,3 +1,4 @@
+
 <div class="container">
                 <div class="b-sandwich js-sidebar-show show-on-tablet show-on-mobile"> <img
                         src="/files/110/sandwich.png" alt="" /> </div>
@@ -6,29 +7,21 @@
                                 src="/files/1/logo.png"></a> </div>
                     <div class="pilot__1 hide-on-tablet hide-on-mobile">
                         <p class="pilot__btn hide-on-mobile"><a class="header_button callback"
-                                 href="#">Заказать услуги</a></p>
-                        <p class="pilot__btn hide-on-desktop hide-on-tablet"><a class="header_button js-sidebar-link"
-                                href="/contacts/#form_e94025029faf1bf94c3d7bb863c083b2">Заказать услуги</a></p>
+                                 href="#form">Заказать услуги</a></p>
                     </div>
                     <div class="pilot__2 hide-on-tablet hide-on-mobile">
                         <p class="pilot__icons hide-on-tablet hide-on-mobile"><a
                                 href="/sluzhba-podderzhki/support/"><img src="/files/110/icon-phone2.png" /> Служба
                                 поддержки</a></p>
-                        <div class="sidebar__menu sidebar__menu--contact hide-on-desktop show-on-tablet show-on-mobile">
-                            <ul>
-                                <li><a href="/about/"><span><img src="/files/110/icon-50-1.png" /> </span>О компании</a>
-                                </li>
-                            </ul>
-                        </div>
                     </div>
                     <div class="pilot__3 hide-on-tablet hide-on-mobile">
                         <div class="b-head-contacts">
-                            <div class="head-contacts__phone" style="margin-top: 16px;"><a   style="font-size: 25px;" href="tel:880020000000">8-800-200-0000</a></div>
+                            <div class="head-contacts__phone" ><a   style="font-size: 25px;" href="tel:89956221475">8 995 622-14-75</a></div>
                             {{!-- Убрать style чтобы выровнить почту --}}
-                            {{!-- <noindex>
-                                <div class="head-contacts__email"><a
-                                        href="mailto:rop@mail.com">rop@mail.com</a></div>
-                            </noindex> --}}
+                            <noindex>
+                                <div class="head-contacts__email"><a class="disabled"
+                                        href="javascript:void(0)">г. КРАСНОДАР | 9:00-21:00</a></div>
+                            </noindex>
                         </div>
                     </div>
                     <div class="pilot__4 hide-on-tablet hide-on-mobile">
@@ -36,7 +29,7 @@
                     </div>
                     <div class="pilot__5 hide-on-tablet hide-on-mobile">
                         <div class="pilot__sale">
-                            <p><a href="/akcii/">Акции</a></p>
+                            <p><a href="#" id="accia">Акция</a></p>
                         </div>
                     </div>
                 </div>
@@ -56,29 +49,24 @@
                                                         <div class="sub-menu__title"><a
                                                                 href="#" class="disabled"  rel="nofollow">Разработка сайтов </a></div>
                                                         <div class="sub-menu__item"><a
-                                                                href="/razrabotka-saitov/gotovie-saiti/">Готовые
-                                                                сайты</a></div>
+                                                            href="/razrabotka-sajta/individualnye-resheniya/sajt-vizitka/">Сайт - Визитка
+                                                        </a></div>
                                                         <div class="sub-menu__item"><a
-                                                                href="/razrabotka-sajta/individualnye-resheniya/landing-page/">Лендинг (Landing)
+                                                                href="/razrabotka-sajta/individualnye-resheniya/landing-page/">Лендинг (Landing page)
                                                             </a></div>
+                                                        
                                                         <div class="sub-menu__item"><a
-                                                            href="/razrabotka-sajta/individualnye-resheniya/sajt-vizitka/">Сайты-визитки
+                                                            href="/razrabotka-sajta/individualnye-resheniya/sajt-vizitka/">Сайт - Каталог
                                                         </a></div>
                                                         <div class="sub-menu__item"><a
-                                                            href="/razrabotka-sajta/individualnye-resheniya/sajt-vizitka/">Сайты-каталоги
-                                                        </a></div>
-                                                        <div class="sub-menu__item"><a
-                                                                href="/razrabotka-sajta/individualnye-resheniya/internet-magazin/">Интернет-магазины
+                                                                href="/razrabotka-sajta/individualnye-resheniya/internet-magazin/">Интернет - Магазин
                                                             </a></div>
                                                         <div class="sub-menu__item"><a
                                                                 href="/razrabotka-sajta/individualnye-resheniya/internet-magazin/">CMS WordPress
                                                             </a></div>
-                                                        <div class="sub-menu__item"><a
+                                                        {{!-- <div class="sub-menu__item"><a
                                                                 href="/razrabotka-sajta/individualnye-resheniya/internet-magazin/">CMS 1C Bitrix
-                                                            </a></div>
-                                                        <div class="sub-menu__item"><a
-                                                                href="/razrabotka-sajta/individualnye-resheniya/internet-magazin/">CMS SEO_First
-                                                            </a></div>
+                                                            </a></div> --}}
                                                         
                                                     </div>
                                                     {{!-- <div class="sub-menu__col">
@@ -347,7 +335,7 @@
                                                     </div> --}}
                                                     {{!-- <div class="sub-menu__col">
                                                         <div class="sub-menu__title"><a
-                                                                href="/sluzhba-podderzhki/hosting-webcanape/">Хостинг</a>
+                                                                href="/sluzhba-podderzhki//">Хостинг</a>
                                                         </div>
                                                         <div class="sub-menu__item"><a
                                                                 href="/razvitie-sajta/hosting/">Тарифы хостинга</a>
@@ -379,20 +367,22 @@
                     <div class="b-header" sklayout="head">
                         <div class="b-sevice">
                             <ul class="level-1" >
-                                <li class="item-1">
+                                {{!-- <li class="item-1" style="background-color: white; line-height: 30px;border-radius: 10%; padding: 0 5px 0 5px; ">
                                 
 
-                                            <select name="sity" id="cars">
-                                                <option class="sity-now" value="0">Москва</option>
+                                            {{!-- <select name="sity" id="cars">
+                                                <option class="sity-now" value="0">Краснодар</option>
                                                 <option class="sity-now" value="1">Волгоград</option>
-                                                </select>
-                                            </li>
+                                                </select> --}}
+                                                <span>Краснодар</span>
+                                            </li> --}}
                                 <li class="item-1"><span><a href="/Прайс по разработке сайтов, интернет продвижению и.pptx" download>
 
-                                            Прайс (скачать)</a></span> </li>
-                                <li class="item-1"><span><a href="/portfolio/">
-                                            Портфолио</a></span> </li>
-                                <li class="item-1"><span><a href="/thanks/">
+                                            Прайс 2023</a></span> </li>
+                                            
+                                <li class="item-1"><span><a href="/Портфолио - 2022 год.xlsx" download>
+                                            Портфолио 2022</a></span> </li>
+                                <li class="item-1"><span><a href="/#otzyvy">
                                             Отзывы</a></span> </li>
                                 {{!-- <li class="item-1"><span><a href="/about/">О
                                             нас</a></span> </li> --}}
@@ -402,7 +392,7 @@
                         </div>
                     </div>
                     <p class="pilot__btn hide-on-mobile "><a ajaxform="1" class="callback"
-                            formname="service_order_popup" href="#" js_max_width="1150">Заказать услуги</a></p>
+                            formname="service_order_popup" href="#form" js_max_width="1150">Заказать услуги</a></p>
                 </div>
             </div>
             <div class="container container-nopad">

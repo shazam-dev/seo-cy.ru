@@ -1,31 +1,51 @@
+// Кнопка сообщение
+
+
+$(".pulse").on("click", function (event) {
+  event.preventDefault();
+
+
+  // $(".grey-back").addClass("d-pos");
+  // $(".grey-back").css('display', 'flex');
+  $(".new-pos").addClass("d-pos");
+});
+
+
+
+
+
 
 
 // Обработка выбора города в хедере сайта
 
-let arrSity = [
-"/", "/volgograd/"
-];
-let select = document.querySelector('#cars');
+// let arrSity = [
+// "/", "/volgograd/"
+// ];
+// let select = document.querySelector('#cars');
 
-if (localStorage.getItem("sityNow")) {
+// if (localStorage.getItem("sityNow")) {
 
-select.value = localStorage.getItem("sityNow");
-} else {
+// select.value = localStorage.getItem("sityNow");
+// } else {
 
-}
+// }
 
-select.addEventListener('focus',function(){
+// select.addEventListener('focus',function(){
 
-  select.value = null;
+//   select.value = null;
   
-  });
+//   });
 
-select.addEventListener('change',function(){
+// select.addEventListener('change',function(){
 
-// window.location.href = arrSity[select.value] ;
-localStorage.setItem("sityNow", select.value);
+// // window.location.href = arrSity[select.value] ;
+// localStorage.setItem("sityNow", select.value);
 
-});
+// });
+
+
+
+
 
 
 
