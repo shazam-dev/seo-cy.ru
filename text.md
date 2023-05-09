@@ -33,7 +33,8 @@ sudo apt install nginx
 
 
 
- GPT чфт
+[ GPT чфт](https://chat.openai.com/)
+
  Логин: brry1gmijd4s@hotmailer.org
  Пароль: biHihmRuJCJ9k2
  Login: brry1gmijd4s@hotmailer.org
