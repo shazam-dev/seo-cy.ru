@@ -2,7 +2,7 @@ import express from 'express';
 let router = express.Router();
 
 import links from './links.js';
-import linksVolgograd from './linksVolgograd.js';
+
 
 // homepage
 // router.get('/', function(req, res, next) {
