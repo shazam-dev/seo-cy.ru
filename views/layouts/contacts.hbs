@@ -5,23 +5,8 @@
     <meta content="text/html; charset=utf-8" http-equiv="Content-Type">
     <meta name="robots" content="index,follow" />
 <!-- МЕТА-Данные -->
-    <title>{{ title }}</title>
-    <meta name="description"
-        content='{{ description }}' />
-
-<meta name="yandex-verification" content="982329bf8d2378f1" />
-
-<!-- Open Graph -->
-    <meta property="og:site_name" content="SEO-First digital-агентство: сайты, продвижение, реклама!" />
-    <meta property="og:url" content="/" />
-    <meta property="og:type" content="website" />
-    <meta property="og:title"
-        content='{{ title }}' />
-    <meta property="og:description"
-        content="{{ description }}" />
-    
-
-
+    <title>404</title>
+    <meta name="description" content="404" />
 
 <!-- Шаблонные -->
     <meta content="width=device-width, initial-scale=1, shrink-to-fit=no" name="viewport">
@@ -33,9 +18,6 @@
     <link rel="preload" href="/fonts/Raleway/RalewayBold/Raleway-Bold.woff2" as="font" crossorigin="anonymous">
     
 
-
-
-    
 <!-- CSS -->
     <link href="/assets/compile/style1.css" rel="stylesheet">
     <link href="/assets/compile/style4.css" rel="stylesheet">
@@ -54,3 +36,37 @@
     <link href="/assets/style.css" rel="stylesheet">
 
 </head>
+
+<body class="g-main" sktag="page">
+    <div class="l-site_wrap js-body">
+        <div class="l-site js-site">
+            <div class="b-scrolltop js-scrolltop"></div>
+
+            {{> header-menu}}
+             <div class="container">
+                <div class="b-title b-title--2">
+                    <h1 >{{ h1 }}</h1>
+                </div>
+            </div> 
+            
+
+
+
+
+            <div class="b-solution-fancy b-solution-fancy_det">
+                {{{body}}}
+            </div>
+
+
+            {{> footer-menu}}
+
+        </div>
+        {{> mobile-menu}}
+    </div>
+    {{> whatsapp}}
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.4/jquery.min.js" integrity="sha512-pumBsjNRGGqkPzKHndZMaAG+bir374sORyzM3uulLV14lN5LyykqNk8eEeUlUkB3U0M4FApyaHraT65ihJhDpQ==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+    <script src="/javascript.js"></script>
+    {{> yandex-metrika}}
+</body>
+
+</html>
