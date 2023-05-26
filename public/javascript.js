@@ -1,6 +1,8 @@
 // Кнопка сообщение
 
 
+
+
 $(".pulse").on("click", function (event) {
   event.preventDefault();
 
@@ -10,7 +12,36 @@ $(".pulse").on("click", function (event) {
   $(".new-pos").addClass("d-pos");
 });
 
+$("#ref").on("click", function (event) {
+  event.preventDefault();
 
+
+  // $(".grey-back").addClass("d-pos");
+  // $(".grey-back").css('display', 'flex');
+  $(".new-pos").toggleClass("d-pos");
+});
+
+
+
+$("#accia, .grey-back").on("click", function (event) {
+  event.preventDefault();
+
+  $(".grey-back").toggleClass("d-no");
+});
+
+// let m12 = document.querySelector(".grey-back");
+
+// m12.addEventListener("click", function(){
+//   // document.getElementById("demo").innerHTML = "Hello World";
+//   console.log(3434);
+// });
+
+
+$(".grey-back").on("click", function (event) {
+  event.preventDefault();
+//  $(".grey-back").css('display', 'block');
+  $(".grey-back").removeClass("d-no");
+});
 
 
 

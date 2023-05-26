@@ -20,13 +20,6 @@ app.use(express.static(__dirname + '/public/'))
 // ROUTING:
 app.use('/', router);
 
-// app.use('/volgograd/', routerVolgograd);
-
-
-// app.get('/', function(req, res) {
-// 	res.render('main');
-// });
-
 
 app.engine('hbs', handlebars.engine);
 app.set('view engine', 'hbs');
@@ -36,7 +29,8 @@ app.set('view engine', 'hbs');
 
 // 404 
 app.use(function(req, res) {
-	res.status(404).render('pages/404', { layout: '404'});
+	res.status(404).render('pages/404', { layout: '404', title: '404 ошибка - такой страницы не найдено!', 
+	description: 'Такой страницы нет на сайте! Ошибка 404.'});
 });
 
 

@@ -130,8 +130,20 @@
 }
 .main-banner-1{
   margin: auto;
-  width: 65%;
+  width: 45%;
   border: 20px solid #ffbb00;;
   background-color: white;
   padding: 15px;
+  margin-top: 10%;
+}
+.main-banner-1 img{
+  width: 100%;
+}
+.d-no{
+  display: block;
+}
+@media handheld, only screen and (max-width: 767px) {
+  .main-banner-1{
+    width: 80%;
+  }
 }

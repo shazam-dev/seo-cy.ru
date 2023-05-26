@@ -9,7 +9,7 @@ IP-адрес:	62.217.181.74
 Имя пользователя:	root
 ОС:	Ubuntu 22.04
 Способ авторизации:	Password
-Пароль:	x&qkw4bH%VG*
+Пароль:	d 
  
 x&qkw4bH%VG*
 x&qkw4bH%VG*
@@ -30,3 +30,6 @@ sudo apt install nginx
  sudo nano /etc/nginx/sites-available/default
 
  https://www.youtube.com/watch?v=Qu-oyzWIpjI&ab_channel=AreaWeb
+
+
+sudo ln -s /etc/nginx/sites-available/kopi /etc/nginx/sites-enabled/
