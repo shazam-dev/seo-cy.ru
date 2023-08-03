@@ -162,17 +162,18 @@
   display: block;
   position: fixed;
   right: 5%;
-  bottom: 10%;
-  width: 260px;
-  height: 60px;
+  bottom: 5%;
+  width: 100px;
+  height: 100px;
+  z-index: 50;
   /* overflow: hidden; */
   }
   .messenger-btn {
     text-align: center;
   padding: 14px;
   display: block;
-  width: 100px;
-  height: 100px;
+  width: 90px;
+  height: 90px;
   border-radius: 60px;
   background-color: #f35858;
   position: absolute;
@@ -187,9 +188,10 @@
   }
   .messenger-links {
   position: absolute;
-  width: 400px;
-  left: 50px;
-  top: 10px;
+  width: 100px;
+  height: 400px;
+  left: 0px;
+  top: -100px;
   transform: scale(0);
   transform-origin: 100% 50%;
   -webkit-transition: all 0.3s;
@@ -198,7 +200,7 @@
   z-index: 0;
   }
   .messenger-links.show {
-  left: -270px;
+  top: -400px;
   transform: scale(1);
   }
   .messenger-links a {
